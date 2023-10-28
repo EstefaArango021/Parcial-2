@@ -1,0 +1,361 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-principal: hwb(29 42% 35%); 
+}
+
+body {
+    width: 100vw;
+    background-color: var(--background-principal);
+}
+
+.header {
+    position: fixed; 
+    top: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:hsla(20, 84%, 12%, 0.616);
+    padding: 0 0.5rem 0 3rem;
+    background: color hsla(20, 84%, 12%, 0.616) ;
+    
+}
+.header .Navegacion{
+    align-items: center;
+    width: 100%;
+    height: 50%;
+
+}
+
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    padding: 1rem; 
+}
+ul{list-style: none;}
+
+.navbar li {
+    margin-right: 0%;
+    border-color: none;
+    list-style: none
+}
+
+.navbar2
+{  display: none;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+    width: 100%;
+    margin-right: 5px;
+  
+}
+
+.link{ 
+    display: flex;
+    flex-direction: row;
+    width: 8vh;
+    height: 5vh;
+    font-size: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color:  #2b1908;
+
+  }
+
+section{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 10%;
+}
+
+#seccion-dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;    
+        padding-top: 2rem;
+}
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
+    height: 95%;
+}
+
+.card{
+    height: 45%;
+    width: 30%;
+    justify-content:center;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 3rem;
+    font-size: 13px;
+    overflow: hidden;
+  }
+
+  .card-body{
+    height: 100%;
+    background-color: var(--background-principal);
+    overflow: hidden;
+  }
+
+.card img{
+    width: 70%;
+    height:90%;
+    align-items:center;
+    margin-left:30% ;
+    border-radius: 3%;
+    overflow: hidden;
+    }
+
+#seccion-tres{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;    
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.contenedor-empleados{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 80%;
+flex-wrap: wrap;
+height: 85%;
+
+}
+
+.contenedor-principal {
+    position: relative;
+    display: flex;
+    border: 5px solid hwb(29 42% 35%);
+    width: 50%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contenedor-principal::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #2b1908;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+.user{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.img-user {
+    position: relative;
+    width: 25%;
+    height: 35%;
+    border-radius: 50%;
+    border: 4px solid hsla(20, 63%, 39%, 0.616);
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.contenedor-texto2 h2 {
+    text-align: center;
+    font-size: 15rem;
+    font-weight: 100; 
+    overflow: hidden;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 100vw;
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.titulo{
+    color: #2b1908;
+    font-size:30px ;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header*/
+
+.header {
+background: #2b1908;
+color: #faf1e971;
+padding: 2rem 0;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 20vh;
+}
+
+  .header a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.logo-nav-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+   .logo{
+    letter-spacing: 5px;
+    font-size: 1.2em;
+   }
+
+.contenetor-nosotros img{
+    position:flexbox ;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.contenedor-sobre-nosotros .contenedor-textos{
+    width: 48%;
+}
+
+
+.contenedor-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenedor-textos h3 span{
+    background: #2b1908;
+    color: aliceblue;
+    border-radius: 70%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgb(10, 9, 9);
+    margin-right: 5px;  
+}
+
+.contenedor-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenetor-nosotros
+{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 6rem;
+}
+
+/* Footer*/
+
+footer{
+    background:#2b1908;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.contenedor-foo{
+    text-align: center;
+}
+
+.contenedor-foo h4{
+    color: white;
+    border-bottom: #f3efeb;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+.contenedor-boton{
+    background: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.contenedor-boton:hover{
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 20px;
+    transition:ease 1s;
+}
+
+@keyframes efecto {
+    0%{
+       box-shadow: 0 0 0 0 rgb(81, 207, 109);
+    }
+    100%{
+        box-shadow: 0 0 0 25px #2b1908;
+    }
+}
